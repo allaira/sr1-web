@@ -8,18 +8,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
   <header class="header">
     <div class="header__inner">
-      <a href="#" class="logo">GameDev Portfolio</a>
+      <h1 class="logo-wrapper">
+        <a href="#" class="logo">GameDev Portfolio</a>
+      </h1>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#about" class="nav__link active">Про автора</a></li>
-          <li class="nav__item"><a href="#works" class="nav__link">Основні роботи</a></li>
-          <li class="nav__item"><a href="#cooperation" class="nav__link">Співпраця</a></li>
-          <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+          <li><a href="#about" class="nav__link active">Про автора</a></li>
+          <li><a href="#works" class="nav__link">Основні роботи</a></li>
+          <li><a href="#cooperation" class="nav__link">Співпраця</a></li>
+          <li><a href="#contacts-form" class="nav__link">Контакти</a></li>
         </ul>
       </nav>
     </div>
@@ -36,6 +39,10 @@
             </div>
             <div class="author-card__bio">
               <h2 class="section-title">Про автора</h2>
+              <aside class="author-status">
+                <p><strong>Поточний статус:</strong> Відкрита до проєктів (GameDev / Junior Unity Developer)</p>
+                <p><strong>Основний стек:</strong> Unity, C#, C++, Blender, Git</p>
+              </aside>
               <p class="author-card__text">
                 Спеціалізуюся на розробці 3D-ігор, проєктуванні інтерактивних механік 
                 та програмуванні на C# та C++. Працюю з рушієм Unity: створюю логіку 
@@ -113,6 +120,187 @@
         <div class="promo-section__media">
           <img src="img/vs_code1.jpg" alt="Інтерфейс коду C#" class="promo-section__img">
         </div>
+      </section>
+      
+      <!-- Метрики-->
+
+      <section id="stats" class="stats-section">
+        <h2 class="section-title">Метрики та навички</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card__number">500+</div>
+            <div class="stat-card__label">Годин коду в Unity & Visual Studio</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">15+</div>
+            <div class="stat-card__label">Запрограмованих інтерактивних механік</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">60 FPS</div>
+            <div class="stat-card__label">Стабільна оптимізація сцени</div>
+          </div>
+        </div>
+
+        <div class="skills-progress">
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>C# Gameplay Programming</span>
+              <span>85%</span>
+            </div>
+            <progress class="custom-progress" value="85" max="100"></progress>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>Unity Physics & Mechanics</span>
+              <span>80%</span>
+            </div>
+            <progress class="custom-progress" value="80" max="100"></progress>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>3D Environment & Low-Poly Modeling</span>
+              <span>75%</span>
+            </div>
+            <progress class="custom-progress" value="75" max="100"></progress>
+          </div>
+        </div>
+      </section>
+
+      <!--Етапи розробки-->
+
+      <section id="timeline" class="timeline-section">
+        <h2 class="section-title">Етапи розробки ігрового проєкту</h2>
+        <div class="timeline">
+          <article class="timeline-step">
+            <div class="timeline-step__marker">01</div>
+            <div class="timeline-step__content">
+              <h3 class="timeline-step__title">Геймдизайн та ТЗ</h3>
+              <p class="timeline-step__desc">Аналіз механік гри, складання списку необхідних взаємодій, архітектура класів у C#.</p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__marker">02</div>
+            <div class="timeline-step__content">
+              <h3 class="timeline-step__title">Прототипування (Greyboxing)</h3>
+              <p class="timeline-step__desc">Збірка локації з простих кубів, тестування управління контролера гравця та фізики колізій.</p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__marker">03</div>
+            <div class="timeline-step__content">
+              <h3 class="timeline-step__title">Інтеграція 3D-асетів та UI</h3>
+              <p class="timeline-step__desc">Заміна базової геометрії на фінальні 3D-моделі, налаштування світла, шейдерів та інтерфейсу інвентарю.</p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__marker">04</div>
+            <div class="timeline-step__content">
+              <h3 class="timeline-step__title">Оптимізація та фінальний білд</h3>
+              <p class="timeline-step__desc">Профілювання навантаження пам'яті (Profiler), усунення просідань кадрів та збірка гри.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <!--Новини/публікації-->
+      <section id="devlog" class="devlog-section">
+        <h2 class="section-title">Останні замітки розробника (DevLog)</h2>
+        <div class="devlog-grid">
+          <article class="devlog-card">
+            <span class="devlog-card__tag">C# / Unity</span>
+            <time class="devlog-card__date" datetime="2026-09-15">15 вересня 2026</time>
+            <h3 class="devlog-card__title">Реалізація модульної взаємодії</h3>
+            <p class="devlog-card__desc">Створення універсального інтерфейсу IInteractable для підбирання предметів та відчинення дверей.</p>
+            <a href="#" class="devlog-card__link">Читати далі &rarr;</a>
+          </article>
+
+          <article class="devlog-card">
+            <span class="devlog-card__tag">3D Modeling</span>
+            <time class="devlog-card__date" datetime="2026-08-28">28 серпня 2026</time>
+            <h3 class="devlog-card__title">Оптимізація світла в закритих локаціях</h3>
+            <p class="devlog-card__desc">Як запікати мапи тіней у коридорних сценах без появи артефактів на швах геометрії.</p>
+            <a href="#" class="devlog-card__link">Читати далі &rarr;</a>
+          </article>
+
+          <article class="devlog-card">
+            <span class="devlog-card__tag">UI Architecture</span>
+            <time class="devlog-card__date" datetime="2026-08-10">10 серпня 2026</time>
+            <h3 class="devlog-card__title">Сітковий інвентар за патерном MVC</h3>
+            <p class="devlog-card__desc">Розділення візуального відображення клітинок та внутрішньої бази даних збережених предметів.</p>
+            <a href="#" class="devlog-card__link">Читати далі &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <!--Відгуки замовників/розробників-->
+      <section id="testimonials" class="testimonials-section">
+        <h2 class="section-title">Відгуки колег та замовників</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-card__text">
+              «Код для взаємодії з предметами написаний дуже охайно та зрозуміло. Легко розширювати нові механіки без ризику зламати старі залежності.»
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar-placeholder">ДМ</div>
+              <div>
+                <h4 class="testimonial-card__name">Дмитро Мельник</h4>
+                <span class="testimonial-card__role">Lead Indie Developer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__text">
+              «Локація вийшла вкрай атмосферною. Світло налаштовано грамотно, а модульна сітка стін дозволила швидко додати ще дві кімнати до сцени.»
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar-placeholder">ОК</div>
+              <div>
+                <h4 class="testimonial-card__name">Олена Коваль</h4>
+                <span class="testimonial-card__role">3D Environment Artist</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <!--Форма зворотнього зв'язку-->
+      <section id="contacts-form" class="feedback-section">
+        <h2 class="section-title">Обговорити проєкт</h2>
+        <form class="feedback-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Ваше ім'я:</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Олександр" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Ваш Email:</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="alex@gamedev.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service" class="form-label">Напрям завдання:</label>
+            <select id="service" name="service" class="form-input form-select" required>
+              <option value="" disabled selected>Оберіть напрям</option>
+              <option value="code">Програмування ігрових механік (C#)</option>
+              <option value="assets">3D-моделювання та модульне оточення</option>
+              <option value="optimization">Оптимізація та рефакторинг сцени</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Короткий опис гри або ТЗ:</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Опишіть вашу гру, механіку або вимоги до асетів..." required></textarea>
+          </div>
+
+          <div class="form-checkbox-group">
+            <input type="checkbox" id="nda" name="nda" class="form-checkbox" required>
+            <label for="nda" class="form-checkbox-label">Погоджуюсь на обробку контактних даних для відповіді</label>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-btn">Надіслати повідомлення</button>
+        </form>
       </section>
     </main>
   </div>
